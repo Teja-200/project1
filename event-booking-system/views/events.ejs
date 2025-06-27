@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Booking System</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📅 Upcoming Events</h1>
+            <div class="top-buttons">
+                <a href="/new" class="btn">+ Create New Event</a>
+                <a href="/logout" class="btn logout">Logout</a>
+            </div>
+        </div>
+
+        <ul class="event-list">
+            <% events.forEach(event => { %>
+                <li class="event-item">
+                    <h2>
+                        <%= event.title %>
+                    </h2>
+                    <p><strong>Date:</strong>
+                        <%= event.date %>
+                    </p>
+                    <p><strong>Location:</strong>
+                        <%= event.location %>
+                    </p>
+                    <p><strong>Seats:</strong>
+                        <%= event.bookedSeats %> /
+                            <%= event.totalSeats %>
+                    </p>
+                    <div class="buttons">
+                        <form action="/cancel/<%= event._id %>" method="POST">
+                            <button class="btn cancel">Cancel</button>
+                        </form>
+                        <a class="btn" href="/participate/<%= event._id %>">Participate</a>
+                    </div>
+                </li>
+                <% }) %>
+        </ul>
+    </div>
+</body>
+
+</html>

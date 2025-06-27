@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Participate in
+        <%= event.title %>
+    </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>📝 Participate in "
+            <%= event.title %>"</h1>
+        <form action="/participate/<%= event._id %>" method="POST" class="event-form">
+            <input type="text" name="name" placeholder="Your Full Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Message (optional)" rows="4"></textarea>
+            <button class="btn" type="submit">Submit Participation</button>
+        </form>
+        <a class="btn back" href="/">← Back to Events</a>
+    </div>
+</body>
+
+</html>

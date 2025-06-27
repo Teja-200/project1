@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.event-list {
+    list-style: none;
+    padding: 0;
+}
+
+.event-item {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.event-item h2 {
+    margin: 0 0 5px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+form {
+    display: inline;
+}
+
+.btn {
+    background: #007bff;
+    color: white;
+    padding: 7px 15px;
+    margin: 5px 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn.cancel {
+    background: #dc3545;
+}
+
+.btn.back {
+    display: block;
+    text-align: center;
+    background: #6c757d;
+    margin-top: 20px;
+}
+
+.event-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.auth-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.logout {
+    float: right;
+    background: #343a40;
+}
+
+.logout:hover {
+    background: #1d2124;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}

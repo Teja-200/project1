@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create New Event</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎉 Create New Event</h1>
+        <form action="/add" method="POST" class="event-form">
+            <input type="text" name="title" placeholder="Event Title" required>
+            <input type="date" name="date" required>
+            <input type="text" name="location" placeholder="Location" required>
+            <input type="number" name="totalSeats" placeholder="Total Seats" required min="1">
+            <button type="submit" class="btn">Add Event</button>
+        </form>
+        <a href="/" class="btn back">← Back to Events</a>
+    </div>
+</body>
+
+</html>
